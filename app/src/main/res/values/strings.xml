@@ -13,5 +13,32 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="tempUserName">"Username"</string>
+    <string name="tempPassword">"Password"</string>
     <string name="title_activity_sign_up">SignUp</string>
+    <string name="email">Email</string>
+
+    <string name="action_goto_settings">Settings</string>
+    <string name="action_goto_recipes">Recipes</string>
+    <string name="action_goto_social">Social</string>
+    <string name="action_goto_food_menu">Menu</string>
+    <string name="action_goto_shopping_list">Shopping List</string>
+    <string name="action_goto_add_item">Add</string>
+
+    <string name="recipe_header">Meatballs</string>
+    <string name="recipe_list">*Stuff\n*Other stuff\n*Breadcrumbs i guess</string>
+    <string name="recipe_instructions">Mix stuffs...yata yata yata yata yata yata yata yata yata yata yata yata yata yata yata yata yata yata yata yata yata yata yata yata yata yata yata yata \n\n fry it\n eat it</string>
+    <string name="prompt_add_item_item"></string>
+    <string name="prompt_add_item_date"></string>
+
+    <string-array name="day_array">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
 </resources>

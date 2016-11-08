@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Monday"
+                android:layout_width="match_parent"
+                android:id="@+id/Monday"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:background="@android:color/holo_green_dark"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_height="63dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:text="Tuesday"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:id="@+id/Tuesday"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@android:color/holo_green_dark"
+                android:layout_marginBottom="10dp" />
+            <TextView
+                android:text="Wednesday"
+                android:layout_width="match_parent"
+                android:id="@+id/Wednesday"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:background="@android:color/holo_green_dark"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_height="63dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:text="Thursday"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:id="@+id/Thurday"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@android:color/holo_green_dark"
+                android:layout_marginBottom="10dp" />
+            <TextView
+                android:text="Friday"
+                android:layout_width="match_parent"
+                android:id="@+id/Friday"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:background="@android:color/holo_green_dark"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_height="63dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:text="Saturday"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:id="@+id/Saturday"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@android:color/holo_green_dark"
+                android:layout_marginBottom="10dp" />
+            <TextView
+                android:text="Sunday"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:id="@+id/Sunday"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@android:color/holo_green_dark"
+                android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button15"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Re-arrange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button14"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>
