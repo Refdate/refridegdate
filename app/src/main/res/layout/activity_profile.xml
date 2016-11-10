@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="149dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:drawable/sym_def_app_icon"
+            android:id="@+id/image_profile" />
+
+        <TextView
+            android:text="@string/text_name_profile"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:id="@+id/name_profile"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <Button
+            android:text="@string/action_invite_to_household_profile"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/invite_to_household_button" />
+
+        <Button
+            android:text="@string/action_recipies_profile"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/recipies_button" />
+
+        <Button
+            android:text="@string/action_add_remove_profile"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_remove_button" />
+    </LinearLayout>
+
+</LinearLayout>
