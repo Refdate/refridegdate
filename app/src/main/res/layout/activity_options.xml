@@ -19,9 +19,9 @@
                 android:layout_height="match_parent"
                 android:id="@+id/switch1"
                 android:layout_weight="0.34"
-                style="@android:style/Widget.Holo.Light.CompoundButton.Switch"
                 android:switchMinWidth="200dip"
-                android:switchPadding="30dip" />
+                android:switchPadding="30dip"
+                android:switchTextAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         </LinearLayout>
 
