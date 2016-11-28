@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorLigthBlue"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -36,18 +37,21 @@
             android:text="@string/action_invite_to_household_profile"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorButtonColor"
             android:id="@+id/invite_to_household_button" />
 
         <Button
             android:text="@string/action_recipies_profile"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorButtonColor"
             android:id="@+id/recipies_button" />
 
         <Button
             android:text="@string/action_add_remove_profile"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorButtonColor"
             android:id="@+id/add_remove_button" />
     </LinearLayout>
 

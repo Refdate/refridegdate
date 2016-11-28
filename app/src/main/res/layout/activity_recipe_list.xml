@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorLigthBlue"
     android:weightSum="1">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="531dp"
-        android:layout_weight="0.82">
+        android:layout_height="464dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -18,8 +18,10 @@
 
     <Button
         android:text="Add"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/button10"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:backgroundTint="@color/colorButtonColor"
+        android:layout_gravity="center" />
 </LinearLayout>
