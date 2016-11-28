@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contItemRoot"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:gravity="center_vertical|left"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:background="@color/colorDateMedium"
+
+    >
+
+    <ImageView
+        android:id="@+id/imItemIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:tint="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/lblItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:text="Derp"
+
+        />
+
+    <ImageButton
+        android:id="@+id/delButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:tint="@color/colorDateRealyShort"
+        android:src="@android:drawable/ic_delete"
+        android:adjustViewBounds="false"
+        android:layout_gravity="right"/>
+
+</LinearLayout>

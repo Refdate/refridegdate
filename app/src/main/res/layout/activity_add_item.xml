@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorLigthBlue"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -71,12 +72,14 @@
             android:layout_height="wrap_content"
             android:id="@+id/button11"
             android:layout_width="300dp"
+            android:backgroundTint="@color/colorButtonColor"
             android:gravity="center_vertical|center_horizontal|center" />
 
         <Button
             android:text="Done"
             android:layout_height="wrap_content"
             android:id="@+id/button12"
+            android:backgroundTint="@color/colorButtonColor"
             android:layout_width="300dp" />
     </LinearLayout>
 

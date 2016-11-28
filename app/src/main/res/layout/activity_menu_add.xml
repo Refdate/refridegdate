@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorLigthBlue"
     android:weightSum="1">
 
     <LinearLayout
@@ -34,12 +35,13 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="313dp"
-        android:layout_weight="0.89"></LinearLayout>
+        android:layout_height="240dp"></LinearLayout>
 
     <Button
         android:text="Add"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button13" />
+        android:id="@+id/button13"
+        android:backgroundTint="@color/colorButtonColor"
+        android:layout_gravity="center" />
 </LinearLayout>
