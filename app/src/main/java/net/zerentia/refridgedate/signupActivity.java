@@ -33,6 +33,7 @@ import static net.zerentia.refridgedate.R.id.button;
 
 public class signupActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor>
 {
+
     private UserSignUpTask mAuthTask = null;
 
     Button signUpButton;

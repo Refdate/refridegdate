@@ -9,7 +9,7 @@ public class MainActivity extends AppCompatActivity {
 
     private fridgeDBHandler fDB;
 
-
+    private ExternalDataHandler DH;
 
     private RecyclerAdapter adapter;
     private RecyclerView recView;
@@ -21,12 +21,18 @@ public class MainActivity extends AppCompatActivity {
         recView = (RecyclerView)findViewById(R.id.recList);
 
         recView.setLayoutManager(new LinearLayoutManager(this));
+        fDB = new fridgeDBHandler(this);
+
+        DH = new ExternalDataHandler();
+        LocalDataHandler.cleanList();
+        DH.pullData(fDB);
+        fDB.updateList();
 
         adapter = new RecyclerAdapter(LocalDataHandler.getItems(), this);
         recView.setAdapter(adapter);
 
-        fDB = new fridgeDBHandler(this);
 
-        fDB.insertUpdate("a", 1);
+
+
     }
 }
