@@ -24,15 +24,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SignUp"
-            android:label="@string/title_activity_sign_up"
+            android:name=".signupActivity"
+            android:label="Signup"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
 
         <activity
             android:name=".MainActivity"
-            android:label="@string/title_activity_sign_up"
+            android:label="Main screen"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>

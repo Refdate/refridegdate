@@ -24,16 +24,8 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textNoSuggestions|textPersonName"
             android:ems="10"
-            android:id="@+id/editText7"
-            android:hint="@string/tempUserName" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:id="@+id/editText8"
+            android:id="@+id/email_input"
             android:hint="@string/prompt_email"
             android:inputType="text" />
 
@@ -42,7 +34,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:ems="10"
-            android:id="@+id/editText"
+            android:id="@+id/password_input"
             android:hint="@string/tempPassword" />
 
         <EditText
@@ -50,13 +42,29 @@
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:ems="10"
-            android:id="@+id/editText2"
+            android:id="@+id/password_input2"
             android:hint="@string/tempPassword" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions|textPersonName"
+            android:ems="10"
+            android:id="@+id/fname_input"
+            android:hint="Firstname" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/sname_input"
+            android:hint="Surname" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button4"
+            android:id="@+id/sign_up_go"
             android:backgroundTint="@color/colorButtonColor"
             tools:text="Send" />
 

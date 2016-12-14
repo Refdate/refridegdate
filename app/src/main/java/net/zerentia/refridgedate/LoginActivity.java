@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * Keep track of the login task to ensure we can cancel it if requested.
      */
     private UserLoginTask mAuthTask = null;
-
+    private String loginKey;
     // UI references.
     private AutoCompleteTextView mEmailView;
     private EditText mPasswordView;
@@ -82,6 +82,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                     return true;
                 }
                 return false;
+            }
+        });
+        Button signUpButton = (Button) findViewById(R.id.sign_up_button);
+
+        signUpButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), signupActivity.class));
             }
         });
 
@@ -293,12 +301,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * the user.
      */
     public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
-        private String requestUrl;
 
         private String mEmail;
         private String mPassword;
 
-        MessageDigest digest;
 
         UserLoginTask(String email, String password) {
             mEmail = email;
@@ -320,15 +326,13 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 JSONObject json = readJsonFromUrl(requestUrl);
 
                 result = json.getBoolean("result");
+                loginKey = json.getString("key");
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (JSONException e) {
                 e.printStackTrace();
             }
 
-
-
-            // TODO: register the new account here.
             return result;
         }
 
@@ -340,7 +344,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
             if (success) {
                 //finish();
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                i.putExtra("Key", loginKey);
+                startActivity(i);
                 finish();
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
@@ -355,7 +361,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         }
     }
 
-    public static String md5(String s) {
+    private static String md5(String s) {
         MessageDigest digest;
         try {
             digest = MessageDigest.getInstance("MD5");
@@ -372,7 +378,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     }
 
 
-    public static JSONObject readJsonFromUrl(String url) throws IOException, JSONException {
+    private static JSONObject readJsonFromUrl(String url) throws IOException, JSONException {
 
         InputStream is = new URL(url).openStream();
         try {

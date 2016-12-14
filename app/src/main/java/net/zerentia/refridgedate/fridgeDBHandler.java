@@ -41,14 +41,14 @@ public class fridgeDBHandler extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table [" + F_NAME +"] (" + F_C_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + F_C_ITEM + " TEXT, " + F_C_DATE + " INTEGER," + F_C_AMOUNT + " INTEGER)");
-        db.execSQL("create table [" + U_NAME +"] (" + U_C_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + F_C_ITEM + " TEXT, " + U_C_TIMESTAMP + " INTEGER," + U_C_AMOUNT + " INTEGER)");
+        db.execSQL("create table [" + U_NAME +"] (" + U_C_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + U_C_ITEM + " TEXT, " + U_C_TIMESTAMP + " INTEGER," + U_C_AMOUNT + " INTEGER)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
-        db.execSQL("DROP TABLE IF EXISTS "+F_NAME);
-        db.execSQL("DROP TABLE IF EXISTS "+U_NAME);
+        db.execSQL("DROP TABLE IF EXISTS ["+F_NAME + "]");
+        db.execSQL("DROP TABLE IF EXISTS ["+U_NAME + "]");
     }
 
     public void insertUpdate(String item, int amount)
@@ -59,7 +59,14 @@ public class fridgeDBHandler extends SQLiteOpenHelper{
         long time = c.getTimeInMillis()/1000;
 
         SQLiteDatabase db = this.getWritableDatabase();
-        Log.e("date", String.valueOf(time));
-//        db.execSQL("");
+
+        db.execSQL("insert into [" + U_NAME + "]('item', 'timestamp', 'amount') VALUES('" + item + "', '" + time + "', '" + amount + "')");
+    }
+
+    public void insertItem(String item, int date, int amount)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        db.execSQL("insert into [" + F_NAME + "]('item', 'timestamp', 'amount') VALUES('" + item + "', '" + date + "', '" + amount + "')");
     }
 }
