@@ -3,15 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_ca73c057067fe7081b7ee2d6223ff76e2ad3ecd9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -39,6 +30,69 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_1af431b2cf18cd92986ffd919fee4135143297d5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_53669ab17fbfc203c7027d4096ae4714f86732e9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_99c441fb12a0a4d444eb48ec63f055f84473a0f2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_da682244db46b65930f7b77883b052def64f92f7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="63624f753cd5156561849d4b4c94af560c122742">
+        <dex dex="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_50d4438c0b594a6d5c0494639f729992d69a5871\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_281dd0221a07355bfc3d1c655bb2b059d67c9799\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_ca73c057067fe7081b7ee2d6223ff76e2ad3ecd9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
@@ -61,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="1f12e8cefebf83b3682cd8b794d919cefead96c0">
+        sha1="f16edeb2aee45b6a473994f97d57a4f449605c34">
         <dex dex="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_794831285f0eb4a5c59b38e88a8f9561e6e55b26\classes.dex" />
     </item>
     <item
@@ -75,24 +129,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_1af431b2cf18cd92986ffd919fee4135143297d5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_53669ab17fbfc203c7027d4096ae4714f86732e9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
@@ -102,30 +138,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_99c441fb12a0a4d444eb48ec63f055f84473a0f2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
         <dex dex="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_e8f5f7104b7afb05150d6c096f0d3664856096c7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_da682244db46b65930f7b77883b052def64f92f7\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -153,24 +171,6 @@
         revision="24.0.2"
         sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
         <dex dex="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_7eeb68efeb0fe18391af1ae50ef899d37c3cd3aa\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="19cacd7dab0feb871429d22d63e65322166c16db">
-        <dex dex="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_50d4438c0b594a6d5c0494639f729992d69a5871\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="C:\Users\elev\Documents\GitHub\refridegdate\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_281dd0221a07355bfc3d1c655bb2b059d67c9799\classes.dex" />
     </item>
 
 </items>
