@@ -5,16 +5,39 @@
     android:background="@color/colorLigthBlue"
     android:weightSum="1">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="409dp"
-        android:layout_weight="0.98">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:id="@+id/header"
+            >
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter item"
+                android:layout_weight="3"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:id="@+id/item_name"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Qty"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionDone"
+                android:id="@+id/item_qty"
+                />
+        </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="389dp"
+        android:id="@+id/item_list"
+        android:layout_below="@+id/header"
+        android:layout_weight="0.63" />
 
     <LinearLayout
         android:orientation="horizontal"
