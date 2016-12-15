@@ -10,31 +10,42 @@
 
     >
 
-    <ImageView
-        android:id="@+id/imItemIcon"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:src="@android:drawable/ic_menu_edit"
-        android:tint="@color/colorPrimary"
-        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/lblItemText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingLeft="16dp"
-        android:text="Derp"
+        <ImageButton
+            android:id="@+id/delButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:tint="@color/colorDateRealyShort"
+            android:src="@android:drawable/ic_delete"
+            android:adjustViewBounds="false"
+            android:layout_gravity="right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp" />
 
-        />
+        <ImageView
+            android:id="@+id/imItemIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@android:drawable/ic_menu_edit"
+            android:tint="@color/colorPrimary"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
 
-    <ImageButton
-        android:id="@+id/delButton"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:tint="@color/colorDateRealyShort"
-        android:src="@android:drawable/ic_delete"
-        android:adjustViewBounds="false"
-        android:layout_gravity="right"/>
+        <TextView
+            android:id="@+id/lblItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:text="Derp"
+
+            android:layout_marginStart="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imItemIcon" />
+    </RelativeLayout>
 
 </LinearLayout>

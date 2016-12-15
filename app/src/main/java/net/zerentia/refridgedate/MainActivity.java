@@ -1,15 +1,19 @@
 package net.zerentia.refridgedate;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
     private fridgeDBHandler fDB;
 
-
+    private Button gotoShoppingList;
+    private Button gotoMenu;
 
     private RecyclerAdapter adapter;
     private RecyclerView recView;
@@ -17,6 +21,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        gotoShoppingList = (Button) findViewById(R.id.goto_shoppinglist);
+        gotoShoppingList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), ShoppingListActivity.class));
+            }
+        });
+
+        gotoMenu = (Button) findViewById(R.id.goto_menu);
+        gotoMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), MenuActivity.class));
+            }
+        });
 
         recView = (RecyclerView)findViewById(R.id.recList);
 
