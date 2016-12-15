@@ -344,6 +344,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 //finish();
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 i.putExtra("Key", loginKey);
+                i.putExtra("skipDB", false);
                 startActivity(i);
                 finish();
             } else {

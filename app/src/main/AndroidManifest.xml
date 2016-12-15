@@ -36,6 +36,8 @@
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
+
+        <activity android:name=".ItemAddActivity"></activity>
     </application>
 
 </manifest>

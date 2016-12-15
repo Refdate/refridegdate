@@ -98,6 +98,15 @@ public class ExternalDataHandler {
             db.applyDummy(1);
             return null;
         }
+
+        protected void onPostExecute(final Boolean success) {
+            jTask = null;
+
+
+            if (success) {
+            } else {
+            }
+        }
     }
 
     public static JSONObject readJsonFromUrl(String url) throws IOException, JSONException {
@@ -122,38 +131,6 @@ public class ExternalDataHandler {
         return sb.toString();
     }
 
-    public int toDays(String date)
-    {
-        int days = 0;
 
-        String[] sDate = date.split("-");
-
-        int year = Integer.parseInt(sDate[0]);
-        int month = Integer.parseInt(sDate[1]);
-        int day = Integer.parseInt(sDate[2]);
-
-
-        Log.d("year", String.valueOf(year));
-        Log.d("month", String.valueOf(month));
-        Log.d("day", String.valueOf(day));
-
-        days += day;
-        int[] mdays = {31, 28, 31, 30,31, 30 , 31, 31, 30, 31, 30, 31};
-
-        for(int m = 0; m < month; m++)
-        {
-            days += mdays[m];
-            if(m == 1 && ((year-1972) % 4 == 0))
-            {
-                days += 1;
-            }
-        }
-
-        days += 365*year;
-
-        days += (year - 1972) / 4;
-
-        return days;
-    }
 }
 
