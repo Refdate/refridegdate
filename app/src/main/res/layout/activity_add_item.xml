@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText9"
+            android:id="@+id/itemInput"
             android:layout_weight="1"
             android:text="@string/prompt_add_item_item"
             tools:text="Item" />
@@ -51,36 +51,32 @@
             android:inputType="date"
             android:text="@string/prompt_add_item_date"
             android:ems="10"
-            android:id="@+id/editText10"
+            android:id="@+id/dateInput"
             android:layout_weight="1"
-            tools:text="Date" />
+            android:hint="MM-DD-YYYY" />
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="301dp"></LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_vertical|center_horizontal">
-
-        <Button
-            android:text="Add"
-            android:layout_height="wrap_content"
-            android:id="@+id/button11"
-            android:layout_width="300dp"
-            android:backgroundTint="@color/colorButtonColor"
-            android:gravity="center_vertical|center_horizontal|center" />
+        android:layout_height="301dp">
 
         <Button
             android:text="Done"
             android:layout_height="wrap_content"
             android:id="@+id/button12"
             android:backgroundTint="@color/colorButtonColor"
-            android:layout_width="300dp" />
+            android:layout_width="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Add"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_button"
+            android:layout_width="300dp"
+            android:backgroundTint="@color/colorButtonColor"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:layout_weight="1" />
     </LinearLayout>
 
 </LinearLayout>

@@ -36,6 +36,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.DerpHo
     public void onBindViewHolder(DerpHolder holder, int position) {
         DateItem item = listData.get(position);
         holder.title.setText(item.getTitle());
+
+        Calendar c = Calendar.getInstance();
+
+        long time = (c.getTimeInMillis()/1000)/86400;
+
+        holder.dateText.setText((item.getDate() - time) + " days left");
        // holder.icon.setImageResource(item.getImageResId());
         holder.container.setBackgroundResource(pickColor(item.getDate()));
     }
@@ -47,6 +53,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.DerpHo
 
     class DerpHolder extends RecyclerView.ViewHolder {
         private TextView title;
+        private TextView dateText;
         private ImageView icon;
         private View container;
 
@@ -57,6 +64,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.DerpHo
             title = (TextView) itemView.findViewById(R.id.lblItemText);
             icon = (ImageView) itemView.findViewById(R.id.imItemIcon);
             container = itemView.findViewById(R.id.contItemRoot);
+            dateText = (TextView) itemView.findViewById(R.id.daysLeftText);
         }
     }
 
@@ -68,11 +76,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.DerpHo
 
         Log.d("DEBUG", Date + " - " + time);
 
-        if(Date - time < 2)
+        if(Date - time <= 2)
         {
             return R.color.colorDateRealyShort;
         }
-        else if(Date - time < 5)
+        else if(Date - time <= 5)
         {
             return R.color.colorDateShort;
         }

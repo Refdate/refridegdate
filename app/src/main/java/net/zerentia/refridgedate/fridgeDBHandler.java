@@ -99,7 +99,7 @@ public class fridgeDBHandler extends SQLiteOpenHelper{
     {
         SQLiteDatabase db = this.getWritableDatabase();
 
-        Cursor res = db.rawQuery("select * from [" + FRIDGE + F_NAME + "] ORDER BY DATE DESC", null);
+        Cursor res = db.rawQuery("select * from [" + FRIDGE + F_NAME + "] ORDER BY DATE ASC", null);
 
         processUpdates(res);
     }
