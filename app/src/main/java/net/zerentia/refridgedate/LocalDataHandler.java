@@ -1,5 +1,7 @@
 package net.zerentia.refridgedate;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -10,11 +12,6 @@ import java.util.List;
 
 public class LocalDataHandler {
 
-    //REMOVE THESE WHEN DB IS IMPLEMENTED ONLY DUMMY DATA
-    private static int dates[] = {1, 2 ,3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 6};
-    private static String names[] = {"Milk", "Egg", "Chicken", "Beef", "Milk", "IceCream", "Pork", "Sausage", "Milk", "Soja", "Apple", "Orange", "Juice", "Milk", "Egg", "Beef", "Beef", "Chicken"};
-
-
     private static List<DateItem> data;
 
     public static List<DateItem> getItems()
@@ -22,18 +19,6 @@ public class LocalDataHandler {
         return data;
     }
 
-    public static void useDummyData()
-    {
-        //TODO get from DB
-        for(int i = 0; i < dates.length && i < names.length; i++)
-        {
-            DateItem tempData = new DateItem();
-            tempData.setTitle(names[i]);
-            tempData.setDate(dates[i]);
-
-            insertIntoList(tempData);
-        }
-    }
 
 
     public static void insertIntoList(DateItem d) {
@@ -42,6 +27,8 @@ public class LocalDataHandler {
 
     public static void insertIntoList(String item, int date, int amount)
     {
+        Log.d("LDH", item);
+
         DateItem d = new DateItem();
 
         d.setDate(date);

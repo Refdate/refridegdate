@@ -25,7 +25,7 @@ import java.nio.charset.Charset;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-import static net.zerentia.refridgedate.R.id.button;
+
 
 /**
  * Created by Elev on 12/14/2016.

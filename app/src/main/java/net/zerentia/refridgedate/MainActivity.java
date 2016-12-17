@@ -17,13 +17,19 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerAdapter adapter;
     private RecyclerView recView;
-
+    private ExternalDataHandler DH;
     private Button gotoAddItem;
 
     //currently an update button
     private Button gotoSocial;
 
     private String loginKey;
+
+    protected void onResume()
+    {
+        super.onResume();
+        updateRecView();
+    }
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
         DH = new ExternalDataHandler();
         LocalDataHandler.cleanList();
-        DH.pullData(fDB);
+        DH.pullData(fDB, this);
         fDB.updateList();
 
         loginKey = getIntent().getExtras().getString("loginKey");
@@ -66,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), ItemAddActivity.class);
-                i.putExtra("Key", loginKey);
                 startActivity(i);
 
             }
@@ -77,13 +82,30 @@ public class MainActivity extends AppCompatActivity {
         gotoSocial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), MainActivity.class);
-                i.putExtra("Key", loginKey);
-                startActivity(i);
-                finish();
+                updateRecView();
             }
         });
 
 
+    }
+
+    public void updateRecView()
+    {
+        DH.pullData(fDB, this);
+
+    }
+
+    public void onDoneUpdate()
+    {
+
+
+        LocalDataHandler.cleanList();
+        fDB.updateList();
+
+        RecyclerView rView = (RecyclerView) findViewById(R.id.recList);
+        rView.removeAllViews();
+//        rView.removeViewInLayout(rView);
+        adapter = new RecyclerAdapter(LocalDataHandler.getItems(), this);
+        recView.setAdapter(adapter);
     }
 }

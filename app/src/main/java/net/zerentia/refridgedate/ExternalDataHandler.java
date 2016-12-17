@@ -31,14 +31,14 @@ public class ExternalDataHandler {
         }
     }
 
-    public void pullData(fridgeDBHandler db)
+    public void pullData(fridgeDBHandler db, MainActivity caller)
     {
         String url = "http://zerentia.net/workspace/refdate/requests/retrive.php?email=1&key=1";
-        jTask = new runJsonUpdate(db);
+        jTask = new runJsonUpdate(db, caller);
         jTask.execute();
     }
 
-    private class runJsonUpdate extends AsyncTask {
+    private class runJsonUpdate extends AsyncTask <Void, Void, Boolean>{
 
 
         JSONArray jsonArray;
@@ -50,9 +50,12 @@ public class ExternalDataHandler {
         int amount;
         fridgeDBHandler db;
 
-        runJsonUpdate(fridgeDBHandler db)
+        MainActivity caller;
+
+        runJsonUpdate(fridgeDBHandler db, MainActivity caller)
         {
             this.db = db;
+            this.caller = caller;
         }
 
         @Override
@@ -63,7 +66,7 @@ public class ExternalDataHandler {
 
 
         @Override
-        protected Object doInBackground(Object[] params) {
+        protected Boolean doInBackground(Void... params) {
 
             Log.d("DEBUG", "is running in ASYNC");
 
@@ -78,20 +81,22 @@ public class ExternalDataHandler {
             }
 
             db.startDummy();
-
-            for(int i = 0; i < jsonArray.length(); i++)
+            if(jsonArray != null)
             {
-                try {
-                    jsonObject = jsonArray.getJSONObject(i);
+                Log.d("WTF", String.valueOf(jsonArray.length()));
+                for (int i = 0; i < jsonArray.length(); i++) {
+                    try {
+                        jsonObject = jsonArray.getJSONObject(i);
 
-                    id = jsonObject.getInt("id");
-                    item = jsonObject.getString("item");
-                    date = jsonObject.getInt("date");
-                    amount = jsonObject.getInt("amount");
+                        id = jsonObject.getInt("id");
+                        item = jsonObject.getString("item");
+                        date = jsonObject.getInt("date");
+                        amount = jsonObject.getInt("amount");
 
-                    db.insertDummy(id, date, item, amount);
-                } catch (JSONException e) {
-                    e.printStackTrace();
+                        db.insertDummy(id, date, item, amount);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
 
@@ -101,11 +106,7 @@ public class ExternalDataHandler {
 
         protected void onPostExecute(final Boolean success) {
             jTask = null;
-
-
-            if (success) {
-            } else {
-            }
+            caller.onDoneUpdate();
         }
     }
 

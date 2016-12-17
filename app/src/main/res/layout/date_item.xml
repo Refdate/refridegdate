@@ -13,7 +13,18 @@
 
     >
 
-
+    <ImageButton
+        android:id="@+id/delButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:backgroundTint="@color/colorButtonTextDark"
+        android:tint="@color/colorWarning"
+        android:src="@android:drawable/ic_delete"
+        android:adjustViewBounds="false"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"/>
     <ImageView
         android:id="@+id/imItemIcon"
         android:layout_width="36dp"
@@ -21,46 +32,48 @@
         android:src="@android:drawable/ic_menu_edit"
         android:tint="@color/colorPrimary"
         android:layout_weight="1"
-        android:layout_alignBottom="@+id/daysLeftText"
-        android:layout_alignTop="@+id/daysLeftText" />
-
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/daysLeftText"
-        android:layout_toStartOf="@+id/delButton"
-        android:layout_marginEnd="65dp"
-        android:layout_alignTop="@+id/delButton"
-        android:layout_alignBottom="@+id/delButton"
-        android:textAlignment="textStart"
-        android:gravity="center"/>
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"/>
 
     <TextView
         android:id="@+id/lblItemText"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:gravity="left"
         android:paddingLeft="16dp"
-        android:text="Derp"
-        android:layout_weight="1"
+        android:text="RealyLongNameOfAnItemForTestPurposes"
         android:layout_width="wrap_content"
-        android:layout_alignTop="@+id/imItemIcon"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/colorButtonTextDark"
         android:layout_toEndOf="@+id/imItemIcon"
-        android:layout_marginStart="11dp"
-        android:layout_alignBottom="@+id/imItemIcon" />
+        android:layout_toStartOf="@id/delButton"/>
 
-    <ImageButton
-        android:id="@+id/delButton"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:tint="@color/colorDateRealyShort"
-        android:src="@android:drawable/ic_delete"
-        android:adjustViewBounds="false"
-        android:layout_gravity="right"
-        android:layout_weight="1"
-        android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true" />
+    <TextView
+        android:text="1000 days left"
+        android:paddingLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysLeftText"
+        android:gravity="left"
+        android:layout_toEndOf="@+id/imItemIcon"
+        android:layout_toStartOf="@id/delButton"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorButtonTextDark"
+        android:layout_marginBottom="5dp"
+        />
+
+    <View
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="100000dp"
+        android:layout_height="3dp"
+        android:background="#000000"
+        android:layout_alignParentRight="true"
+        android:scaleX="1"
+        android:scaleY="1" />
+
 
 
 </RelativeLayout>
