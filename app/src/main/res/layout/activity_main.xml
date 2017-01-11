@@ -68,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorButtonColor"
-            android:id="@+id/button8" />
+            android:id="@+id/goto_shoppinglist" />
     </TableRow>
 
     <android.support.v7.widget.RecyclerView

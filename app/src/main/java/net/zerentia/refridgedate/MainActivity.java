@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recView;
 
     private Button gotoAddItem;
-
+    private ExternalDataHandler DH;
     //currently an update button
     private Button gotoSocial;
 
