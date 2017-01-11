@@ -97,6 +97,8 @@ public class fridgeDBHandler extends SQLiteOpenHelper{
 
     public void updateList()
     {
+        LocalDataHandler.cleanList();
+
         SQLiteDatabase db = this.getWritableDatabase();
 
         Cursor res = db.rawQuery("select * from [" + FRIDGE + F_NAME + "] ORDER BY DATE ASC", null);
@@ -107,19 +109,19 @@ public class fridgeDBHandler extends SQLiteOpenHelper{
     public void processUpdates(Cursor res)
     {
         String item;
-        int date;
-        int amount;
+            int date;
+            int amount;
 
 
-        StringBuffer buffer = new StringBuffer();
+            StringBuffer buffer = new StringBuffer();
 
-        while(res.moveToNext())
-        {
-            item = res.getString(1);
-            date = res.getInt(2);
-            amount = res.getInt(3);
+            while(res.moveToNext())
+            {
+                item = res.getString(1);
+                date = res.getInt(2);
+                amount = res.getInt(3);
 
-            LocalDataHandler.insertIntoList(item, date, amount);
+                LocalDataHandler.insertIntoList(item, date, amount);
         }
     }
 

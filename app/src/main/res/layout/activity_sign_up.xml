@@ -1,75 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:background="@color/colorLigthBlue"
-    tools:context="net.zerentia.refridgedate.SignUp">
+    android:background="@color/colorBackground">
 
-    <android.support.design.widget.AppBarLayout
+    <EditText
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:ems="10"
+        android:id="@+id/email_input"
+        android:hint="@string/prompt_email"
+        android:inputType="text" />
 
-    </android.support.design.widget.AppBarLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_marginTop="100dp"
+    <EditText
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText"
+        android:layout_below="@id/email_input"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password_input"
+        android:hint="@string/tempPassword" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:id="@+id/email_input"
-            android:hint="@string/prompt_email"
-            android:inputType="text" />
+    <EditText
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText"
+        android:layout_below="@id/password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password_input2"
+        android:hint="@string/tempPassword" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:id="@+id/password_input"
-            android:hint="@string/tempPassword" />
+    <EditText
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText"
+        android:layout_below="@id/password_input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions|textPersonName"
+        android:ems="10"
+        android:id="@+id/fname_input"
+        android:hint="Firstname" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:id="@+id/password_input2"
-            android:hint="@string/tempPassword" />
+    <EditText
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText"
+        android:layout_below="@id/fname_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/sname_input"
+        android:hint="Surname" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textNoSuggestions|textPersonName"
-            android:ems="10"
-            android:id="@+id/fname_input"
-            android:hint="Firstname" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/sname_input"
-            android:hint="Surname" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/sign_up_go"
-            android:backgroundTint="@color/colorButtonColor"
-            tools:text="Send" />
-
-    </LinearLayout>
-
-    <include layout="@layout/content_sign_up"/>
-
-</android.support.design.widget.CoordinatorLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/sname_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_up_go"
+        android:textColor="@color/colorButtonTextDark"
+        android:text="Sign up"
+        android:backgroundTint="@color/colorButtonDark"/>
+</RelativeLayout>

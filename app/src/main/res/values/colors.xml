@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#403E3F</color>
+    <color name="colorPrimaryDark">#201E1F</color>
+    <color name="colorAccent">#FFA500</color>
     <color name="colorLigthBlue">#6BCBFF</color>
     <color name="colorButtonColor">#FFFFFF</color>
 
-    <color name="colorDateLong">#00D000</color>
-    <color name="colorDateMedium">#FFFF00</color>
-    <color name="colorDateShort">#FF9000</color>
-    <color name="colorDateRealyShort">#FF0000</color>
+    <!-- Main style -->
+    <color name="colorButtonDark">#FFA500</color>
+    <color name="colorButtonTextDark">#1A1A1A</color>
+    <color name="colorBackground">#201E1F</color>
+    <color name="colorText">#A1A1A1</color>
+
+
+    <color name="colorDateLong">#00AEEF</color>
+    <color name="colorDateMedium">#A6CF41</color>
+    <color name="colorDateShort">#E3E534</color>
+    <color name="colorDateRealyShort">#EB6444</color>
+    <color name="colorDateOut">#C5C0D1</color>
+
+    <color name="colorWarning">#FF0000</color>
 </resources>

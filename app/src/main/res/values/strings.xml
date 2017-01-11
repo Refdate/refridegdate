@@ -73,5 +73,6 @@
         <item>Sunday</item>
     </string-array>
 
+    <string name="Scan">Scan</string>
 
 </resources>

@@ -35,3 +35,9 @@ local.properties
 .Trashes
 ehthumbs.db
 Thumbs.db
+app/src/main/AndroidManifest.xml
+build/intermediates/dex-cache/cache.xml
+build/intermediates/dex-cache/cache.xml
+app/src/main/AndroidManifest.xml
+build/intermediates/dex-cache/cache.xml
+app/src/main/res/layout/activity_main.xml
