@@ -14,12 +14,13 @@ public class MainActivity extends AppCompatActivity {
 
     private Button gotoShoppingList;
     private Button gotoMenu;
+    private Button gotoOptions;
 
     private RecyclerAdapter adapter;
     private RecyclerView recView;
     private ExternalDataHandler DH;
     private Button gotoAddItem;
-    private ExternalDataHandler DH;
+
     //currently an update button
     private Button gotoSocial;
 
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
         DH = new ExternalDataHandler();
         LocalDataHandler.cleanList();
-        DH.pullData(fDB, this);
+        DH.pullData(fDB);
         fDB.updateList();
 
         loginKey = getIntent().getExtras().getString("loginKey");
@@ -67,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         recView.setAdapter(adapter);
 
         gotoAddItem = (Button) findViewById(R.id.menu_add_goto);
-
         gotoAddItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -77,8 +77,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        gotoSocial = (Button) findViewById(R.id.goto_social);
+        gotoOptions = (Button) findViewById(R.id.goto_options);
+        gotoOptions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), OptionsActivity.class));
+            }
+        });
 
+        gotoSocial = (Button) findViewById(R.id.goto_social);
         gotoSocial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -91,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void updateRecView()
     {
-        DH.pullData(fDB, this);
+        DH.pullData(fDB);
 
     }
 

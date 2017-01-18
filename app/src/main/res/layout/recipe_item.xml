@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recipeItemRoot"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:gravity="center_vertical|left"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:background="@color/colorDateMedium"
+
+    >
+
+    <Button
+        android:id="@+id/recipeDeleteButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:adjustViewBounds="false"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:text="Del" />
+    <ImageView
+        android:id="@+id/recipeItemIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:tint="@color/colorPrimary"
+        android:layout_weight="1"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/recipeNameText"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="16dp"
+        android:text="RealyLongNameOfAnItemForTestPurposes"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/colorButtonTextDark"
+        android:layout_toEndOf="@+id/imItemIcon"
+        android:layout_toStartOf="@id/delButton"/>
+
+
+</RelativeLayout>

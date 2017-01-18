@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">RefridgeDate</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">E-post</string>
+    <string name="prompt_password">Lössenord</string>
+    <string name="action_email_sing_in">Logga in</string>
+    <string name="action_sign_in_short">Logga in</string>
+    <string name="action_forgot_password">Glömt lössenord</string>
+    <string name="action_sing_up">Registrera</string>
+    <string name="error_invalid_email">E-posten är felaktig</string>
+    <string name="error_invalid_password">Lössenordet är för kort</string>
+    <string name="error_incorrect_password">Lössenordet är felaktigt</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Stings related to forgot password -->
+
+    <string name="prompt_email_forgot">E-post</string>
+    <string name="prompt_username_forgot">Användarnamn</string>
+    <string name="action_send_forgot">Skicka</string>
+    <!-- Strings related to social -->
+    <string name="action_message_social">Medelande</string>
+    <string name="action_add_friend_social">Lägg till vän</string>
+    <!-- Strings related to add friend -->
+    <string name="action_search_add_friend">Sök</string>
+    <!-- Strings related to profile -->
+    <string name="text_name_profile">This is Bobs name</string>
+    <string name="action_invite_to_household_profile">Bjud in till hushåll</string>
+    <string name="action_recipies_profile">Recept</string>
+    <string name="action_add_remove_profile">Lägg till</string>
+    <!-- Strings related to shopping list -->
+    <string name="action_add_shopping_list">Lägg till</string>
+    <string name="action_remove_shopping_list">Tabort</string>
+    <!-- Strings related to options -->
+    <string name="action_big_font_options">Stort font</string>
+    <string-array name="action_choose_lang_options">
+        <item>English</item>
+        <item>Swedish</item>
+        <item>Korean</item>
+    </string-array>
+    <!-- Strings related to sing-up -->
+    <string name="tempUserName">\"Användarnamn\"</string>
+    <string name="tempPassword">\"Lössenord\"</string>
+    <string name="title_activity_sign_up">Registrera</string>
+    <string name="email">E-post</string>
+    <!-- Strings related to  -->
+
+    <string name="action_goto_settings">Alternativ</string>
+    <string name="action_goto_recipes">Recept</string>
+    <string name="action_goto_social">Social</string>
+    <string name="action_goto_food_menu">Meny</string>
+    <string name="action_goto_shopping_list">Inköpslista</string>
+    <string name="action_goto_add_item">Lägg till</string>
+    <!-- Strings related to  -->
+
+    <string name="recipe_header">Meatballs</string>
+    <string name="recipe_list">*Stuff\n*Other stuff\n*Breadcrumbs i guess</string>
+    <string name="recipe_instructions">Mix stuffs\n\n fry it\n eat it</string>
+    <string name="prompt_add_item_item"> </string>
+    <string name="prompt_add_item_date"> </string>
+
+
+    <string-array name="day_array">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string name="Scan">Skanna</string>
+    <string name="error_field_required">Detta fält är obligatoriskt</string>
+
+</resources>

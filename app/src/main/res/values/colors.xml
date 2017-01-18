@@ -3,16 +3,22 @@
     <color name="colorPrimary">#403E3F</color>
     <color name="colorPrimaryDark">#201E1F</color>
     <color name="colorAccent">#FFA500</color>
-    <color name="colorLigthBlue">#6BCBFF</color>
-    <color name="colorButtonColor">#FFFFFF</color>
 
     <!-- Main style -->
     <color name="colorButtonDark">#FFA500</color>
     <color name="colorButtonTextDark">#1A1A1A</color>
     <color name="colorBackground">#201E1F</color>
-    <color name="colorText">#A1A1A1</color>
+    <!-- <color name="colorText">#A1A1A1</color> -->
 
+    <!-- Test style -->
+    <color name="colorLigthBlue">#00EDFF</color>
+    <color name="colorLigthBlue1">#6BCBFF</color>
+    <color name="colorLigthBlue2">#00AEEF</color>
+    <color name="colorLigthBlue3">#0050FF</color>
+    <color name="colorButtonColor">#FFFFFF</color>
+    <color name="colorText">#000000</color>
 
+    <!-- FrigeDate style -->
     <color name="colorDateLong">#00AEEF</color>
     <color name="colorDateMedium">#A6CF41</color>
     <color name="colorDateShort">#E3E534</color>
