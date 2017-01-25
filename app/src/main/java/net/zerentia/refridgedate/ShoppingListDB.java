@@ -7,7 +7,12 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 /**
+ * This is the class that handles and creates the shopping list database.
+ *
  * Created by elev on 2016-12-13.
+ * @author Tim Ekenberg
+ * @version 1.0
+ * @since   2016-12-13.
  */
 
 public class ShoppingListDB {

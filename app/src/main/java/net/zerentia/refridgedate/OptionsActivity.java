@@ -13,7 +13,12 @@ import java.util.Locale;
 import static net.zerentia.refridgedate.RecyclerAdapter.getActivity;
 
 /**
+ * This is the class that handles the language settings and future options.
+ *
  * Created by elev on 2017-01-13.
+ * @author Tim Ekenberg
+ * @version 1.0
+ * @since   2017-01-13.
  */
 
 public class OptionsActivity extends AppCompatActivity{

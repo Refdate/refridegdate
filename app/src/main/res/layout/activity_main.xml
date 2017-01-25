@@ -27,7 +27,7 @@
             android:text="@string/action_goto_recipes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button"
+            android:id="@+id/goto_recipe"
             android:backgroundTint="@color/colorButtonColor"
             android:layout_gravity="center" />
 

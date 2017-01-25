@@ -1,7 +1,13 @@
 package net.zerentia.refridgedate;
 
 /**
+ * This is the class that handles the (weekly) menu and calls the MenuDB database.
+ * NOTE: this class needs to be optimised
+ *
  * Created by elev on 2016-12-15.
+ * @author Tim Ekenberg
+ * @version 1.0
+ * @since   2016-12-15.
  */
 
 import android.content.DialogInterface;
@@ -53,7 +59,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     private int selectedItemDelete = 0;
     private MenuDB menuDB;
 
-    //TODO Optimise the code.
+    //TODO Optimise the code, reduce duplicates.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

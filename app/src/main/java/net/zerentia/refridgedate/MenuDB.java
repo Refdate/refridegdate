@@ -8,7 +8,12 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 
 /**
+ *  This is the class that handles and creates the menu database.
+ *
  * Created by elev on 2016-12-15.
+ * @author Tim Ekenberg
+ * @version 1.0
+ * @since   2016-12-15.
  */
 
 public class MenuDB {

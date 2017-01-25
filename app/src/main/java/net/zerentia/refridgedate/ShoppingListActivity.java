@@ -17,6 +17,15 @@ import android.widget.SimpleCursorAdapter;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+    /**
+     * This is the class that handles the shopping list and calls the ShoppingListDB database.
+     *
+     * Created by elev on 2016-12-13.
+     * @author Tim Ekenberg
+     * @version 1.0
+     * @since   2016-12-13.
+     */
+
 
     public class ShoppingListActivity extends AppCompatActivity implements View.OnClickListener{
         private ArrayList<HashMap<String,String>> items = new ArrayList<HashMap<String, String>>();
